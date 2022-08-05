@@ -54,7 +54,6 @@ http://www.templatemo.com/tm-498-stimulus
                     <li><a href="#home" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About Me</a></li>
                     <li><a href="#experience" class="smoothScroll">Experiences</a></li>
-                    <li><a href="#quotes" class="smoothScroll">Testimonial</a></li>
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
                </ul>
           </div>
@@ -293,7 +292,7 @@ http://www.templatemo.com/tm-498-stimulus
 
 
                          <div id="contact-form">
-                              <form method="post">
+                              
                                    <div class="wow fadeInUp" data-wow-delay="1s">
                                         <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
                                    </div>
@@ -304,9 +303,9 @@ http://www.templatemo.com/tm-498-stimulus
                                         <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
                                    </div>
                                    <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
-                                        <input href="#" name="submit" type="submit" class="form-control" id="submit" value="Send" onclick="sendMail(); return false;">
+                                        <input name="submit" type="submit" class="form-control SendEmail" id="submit" value="Send" onclick="sendMail();">
                                    </div>
-                              </form>
+                              
                          </div>
 
                     </div>
@@ -342,9 +341,10 @@ http://www.templatemo.com/tm-498-stimulus
                <div class="col-md-12 col-sm-12">
                     
 				<ul class="wow fadeInUp social-icon" data-wow-delay="2s">
-                         <li><a href="#" class="fa fa-facebook"></a></li>
-                         <li><a href="#" class="fa fa-google-plus"></a></li>
-                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                         <li><a href="https://kdeepthi123.github.io/mockup-Storageconnect/" class="fa fa-facebook"></a></li>
+                         <li><a href="https://www.instagram.com/kondavitideepthi/" class="fa fa-instagram"></a></li>
+                         <li><a href="https://www.linkedin.com/in/kondaviti-deepthi-550819197/" class="fa fa-linkedin"></a></li>
+                         <li><a href="https://github.com/kdeepthi123" class="fa fa-github"></a></li>
                     </ul>
                </div>
 			
@@ -353,20 +353,31 @@ http://www.templatemo.com/tm-498-stimulus
 </footer>
 
 <!-- SCRIPTS -->
-<script>
-     function sendMail() {
-          var subject="from "+document.getElementById("name").value+", "+document.getElementById("email").value;
-          var message=document.getElementById("message").value
-          window.open('mailto:kondavitideepthi@gmail.com?subject=This is the email subject&body=This is the email body');
-            
-}
-     </script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+     $(function () {
+      $('.SendEmail').click(function (event) {
+         // console.log()
+        var email = 'kondavitideepthi@gmail.com';
+        var subject = "From "+ $('#fullname').val() +", This is my personal email: " +$('#email').val();
+        var emailBody = $('#message').val();
+        if(email&&subject&&emailBody){
+          document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+        }
+        else{
+          alert("Please fill out the values")
+        }
+
+        
+      });
+    });
+     </script>
+
 
 </body>
 </html>
