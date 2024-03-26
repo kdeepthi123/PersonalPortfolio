@@ -270,22 +270,22 @@ color: #0D0F16;
 }
 .item1 { 
    grid-area: one;
-   background-image: url(../img/project05.png);
+   background-image: url(../images/Screenshot\ 2024-03-26\ at\ 5.06.39\ PM.png);
    
 }
 .item2 {
   grid-area: two;
-  background-image: url(../img/project02.png);
+  background-image: url(../images/Screenshot\ 2024-03-26\ at\ 4.52.38\ PM.png);
 }
-.item3 { grid-area: three; background-image: url(../img/project03.png); }
-.item4 { grid-area: four; background-image: url(../img/project04.png); }
-.item5 { grid-area: five; background-image: url(../images/Storage\ Connect.png);}
+.item3 { grid-area: three; background-image: url(../images/Storage\ Connect.png); }
+.item4 { grid-area: four; background-image: url(../images/Screenshot\ 2024-03-26\ at\ 4.42.15\ PM.png); }
+.item5 { grid-area: five; background-image: url(../images/Screenshot\ 2024-03-26\ at\ 4.52.38\ PM.png);}
 
 .project-grid {
 display: grid;
 grid-template-areas:
   'one one two'
-  'three four five';
+  'three four two';
 gap: 10px;
 padding: 10px;
 }
@@ -325,16 +325,16 @@ border-radius: 10px;
   color: #ececec;
   opacity: 0;
   transition: 0.7s;
-  background-color: #ff7777;
-  border: #F87474; 
+  background-color: #E3AE57;
+  border: #E3AE57; 
 }
 
 .layer:hover a{
   opacity: 1;
 }
 .layer a:hover{
-  background-color: #f54343;
-  border: #F87474; 
+  background-color: #E9724C;
+  border: #E9724C; 
 }
 
 /* services */
