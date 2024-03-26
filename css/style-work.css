@@ -270,15 +270,15 @@ color: #0D0F16;
 }
 .item1 { 
    grid-area: one;
-   background-image: url(../images/Screenshot\ 2024-03-26\ at\ 5.06.39\ PM.png);
+   background-image: url(../images/isu2.png);
    
 }
 .item2 {
   grid-area: two;
-  background-image: url(../images/Screenshot\ 2024-03-26\ at\ 4.52.38\ PM.png);
+  background-image: url(../images/carpool1.png);
 }
 .item3 { grid-area: three; background-image: url(../images/Storage\ Connect.png); }
-.item4 { grid-area: four; background-image: url(../images/Screenshot\ 2024-03-26\ at\ 4.42.15\ PM.png); }
+.item4 { grid-area: four; background-image: url(../images/farm.png); }
 .item5 { grid-area: five; background-image: url(../images/Screenshot\ 2024-03-26\ at\ 4.52.38\ PM.png);}
 
 .project-grid {
